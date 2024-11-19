@@ -1,7 +1,5 @@
 import { Body, Controller, Delete, Get, HttpCode, Param, ParseIntPipe, Post, Put, Query, Req, Res } from '@nestjs/common';
-import { Request, Response } from 'express';
 import { CreateTodoDto } from 'src/dto/create-todo.dto';
-import { ListAllTodoItems } from 'src/dto/listAllTodoItems.dto';
 import { UpdateTodoDto } from 'src/dto/updateTodo.dto';
 import { TodoService } from './todo.service';
 import { Todo } from 'src/models/Todo.model';
