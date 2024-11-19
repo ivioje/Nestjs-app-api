@@ -14,8 +14,8 @@ import * as cors from 'cors'
     SequelizeModule.forRoot({
       dialect: 'postgres',
       host: process.env.DATABASE_HOST,
-      port: +process.env.DATABASE_PORT,
-      password: process.env.DATABASE_PASS,
+      port: 5432,
+      password: process.env.DATABASE_PASSWORD,
       username: process.env.DATABASE_USER,
       database: process.env.DATABASE_NAME,
       models: [Todo],
